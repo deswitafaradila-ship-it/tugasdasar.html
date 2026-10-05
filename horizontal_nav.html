@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Navigasi CSS Dasar</title>
+    <style>
+        /* 1. Menghilangkan margin bawaan browser dan list style */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2; /* Latar belakang menu umum (Project & About) */
+            overflow: hidden; /* Mencegah float meluap keluar */
+        }
+
+        /* 2. Menjajarkan menu ke samping */
+        li {
+            float: left;
+        }
+
+        /* 3. Mengatur tampilan tombol link */
+        li a {
+            display: block;
+            color: #555555; /* Warna teks default */
+            text-align: center;
+            padding: 15px 25px;
+            text-decoration: none; /* Menghilangkan garis bawah link */
+            text-transform: uppercase; /* Mengubah teks jadi huruf kapital */
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        /* 4. Tampilan menu 'Home' yang aktif */
+        li a.active {
+            background-color: #3caea3; /* Warna hijau toska */
+            color: white; /* Warna teks putih */
+        }
+
+        /* 5. Tampilan menu saat diarahkan kursor (seperti 'Service' di gambar) */
+        li a:hover {
+            background-color: #4a4a4a; /* Warna abu-abu gelap */
+            color: white;
+            border-bottom: 4px solid #3caea3; /* Garis hijau toska di bagian bawah */
+            padding-bottom: 11px; /* Mengurangi padding bawah agar tinggi menu tidak berubah */
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>
